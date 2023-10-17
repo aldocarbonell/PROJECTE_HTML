@@ -1,1 +1,74 @@
-img#LOGO { width: 150px; height: 150px;}
+body {
+
+    margin: 0;
+
+    padding: 0;
+}
+
+header {
+    text-align: center; 
+    background-color: #169ca4; 
+    margin: 0; 
+    padding: 0;}
+
+img#LOGO {   
+   width: 150px;  
+    height: 150px;   
+    margin: 0;    
+    padding: 0;
+}
+
+nav {
+    position: sticky; /* Mantiene el menú en la parte superior de la página */
+    top: 0;
+    text-align: center; /* Centra el menú horizontalmente */
+    background-color: #F7C620; /* Color de fondo del menú */
+}
+    
+nav ul {
+    margin: 0;
+    padding: 10px;
+}
+    
+nav li {
+    display: inline;
+}
+
+li a {
+    color: black;
+    text-decoration: none;
+    transition: color 0.3s; /* Agrega una transición de color */
+}
+    
+li a:hover {
+    color: #169ca4; /* Cambia el color del texto al pasar el cursor */
+}
+
+.game-list {
+   text-align: center; /* Centra los bloques horizontalmente */
+   margin-top: 50px; /* Espacio entre el menú y la lista de juegos */
+}
+
+.game {
+    display: inline-block;
+    text-align: left;
+    border: 1px dotted #999; /* Línea de puntos alrededor */
+    border-radius: 10px; /* Bordes redondeados */
+    margin: 10px;
+    padding: 10px;
+    max-width: 300px; /* Tamaño máximo del bloque */
+}
+    
+.game img {
+    max-width: 100%; /* Ajusta el tamaño de la imagen al bloque */
+}
+    
+.game h3 {
+    margin: 10px 0;
+}
+    
+.info-button {
+    display: block;
+    margin-top: 10px;
+    text-align: right;
+}
