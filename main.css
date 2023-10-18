@@ -1,8 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@100&family=Maven+Pro:wght@400;700&display=swap&#39;');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@100;400&family=Maven+Pro:wght@400;700&display=swap&#39;');
+
 body {
-
     margin: 0;
-
     padding: 0;
+    font-family: 'kanit';
 }
 
 header {
@@ -19,6 +21,7 @@ img#LOGO {
 }
 
 nav {
+    font-family: 'kanit';
     position: sticky; /* Mantiene el menú en la parte superior de la página */
     top: 0;
     text-align: center; /* Centra el menú horizontalmente */
@@ -32,9 +35,11 @@ nav ul {
     
 nav li {
     display: inline;
+    margin-right: 30px;
 }
 
 li a {
+    font-family: 'kanit';
     color: black;
     text-decoration: none;
     transition: color 0.3s; /* Agrega una transición de color */
@@ -45,29 +50,41 @@ li a:hover {
 }
 
 .game-list {
-   text-align: center; /* Centra los bloques horizontalmente */
-   margin-top: 50px; /* Espacio entre el menú y la lista de juegos */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    text-align: center; /* Centra los bloques horizontalmente */
+    margin-top: 50px; /* Espacio entre el menú y la lista de juegos */
 }
 
 .game {
+    width: 30%;
     display: inline-block;
     text-align: left;
-    border: 1px dotted #999; /* Línea de puntos alrededor */
+    border: 2px dotted #F7C620; /* Línea de puntos alrededor */
     border-radius: 10px; /* Bordes redondeados */
     margin: 10px;
-    padding: 10px;
-    max-width: 300px; /* Tamaño máximo del bloque */
+    padding: 0%;
 }
     
 .game img {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
     max-width: 100%; /* Ajusta el tamaño de la imagen al bloque */
 }
-    
+.game p {
+    margin: 10px 0;
+    padding: 10px;
+}
+
 .game h3 {
     margin: 10px 0;
+    padding: 10px;
 }
     
 .info-button {
     display: block;
     text-align: right;
+    align-self: flex-end;
 }
