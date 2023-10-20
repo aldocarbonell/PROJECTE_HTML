@@ -11,11 +11,14 @@ header {
     text-align: center; 
     background-color: #169ca4; 
     margin: 0; 
-    padding: 0;}
+    padding: 0;
+    position: relative;
+    z-index: 1;
+}
 
 img#LOGO {   
-   width: 150px;  
-    height: 150px;   
+   width: 100px;  
+    height: 100px;   
     margin: 0;    
     padding: 0;
 }
@@ -26,6 +29,7 @@ nav {
     top: 0;
     text-align: center; /* Centra el menú horizontalmente */
     background-color: #F7C620; /* Color de fondo del menú */
+    z-index: 2;
 }
     
 nav ul {
@@ -59,32 +63,153 @@ li a:hover {
 }
 
 .game {
-    width: 30%;
-    display: inline-block;
+    width: 31%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     text-align: left;
-    border: 2px dotted #F7C620; /* Línea de puntos alrededor */
+    border: 2px dashed #F7C620; /* Línea de puntos alrededor */
     border-radius: 10px; /* Bordes redondeados */
     margin: 10px;
     padding: 0%;
+    position: relative;
 }
     
 .game img {
+    width: 100%;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
-    max-width: 100%; /* Ajusta el tamaño de la imagen al bloque */
 }
 .game p {
-    margin: 10px 0;
-    padding: 10px;
+    margin: 2px 0;
+    margin-left: 10px;
+    padding: 5px;
 }
 
 .game h3 {
-    margin: 10px 0;
-    padding: 10px;
+    margin: 5px 0;
+    margin-left: 10px;
+
+    padding: 2px;
 }
     
 .info-button {
-    display: block;
     text-align: right;
     align-self: flex-end;
+    background-color: #F7C620;
+    padding: 5px 10px;
+    border-radius: 10px;
+    text-decoration: none;
+    margin: 4px;
+
+}
+
+.extra-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 15px;
+}
+
+.trucos {
+    background: lightblue;
+    padding: 20px;
+    border-radius: 10px;
+    width: 60%;
+    border: 2px dotted black;
+}
+
+.trucos h2 {
+    color: #169ca4;
+    font-size: 24px;
+    text-align: center;
+    margin: 0%;
+}
+.trucos h3 {
+    text-align: center;
+    color: #F7C620;
+    
+}
+.trucos p {
+    text-align: center;
+}
+
+.trucos-item {
+    margin-bottom: 20px;
+}
+
+.noticias {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 10px;
+}
+
+.noticias h1 {
+    font-size: 32px;
+    color: #169ca4;
+    text-align: center;
+    margin: 0%;
+}
+
+.noticia-flex {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.noticia {
+    background: #f2f2f2;
+    padding: 10px;
+    border-radius: 10px;
+    width: 40%;
+    border: 1px solid #169ca4;
+    margin: 10px;
+}
+
+.fecha {
+    font-size: 12px;
+    color: #666;
+}
+
+.imagen-noticia {
+    position: relative;
+    text-align: center;
+    width: 100%;
+}
+.imagen-noticia img {
+    max-width: 30%;
+    height: auto;
+    margin-top: 10px;
+}
+.boton {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #169ca4;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.boton:hover {
+    background-color: #137d85;
+}
+
+/*barra lateral bonita, para compensar un poco*/
+
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-track {
+    background: #169ca4; /* Color de fondo de la barra de desplazamiento */
+}
+
+::-webkit-scrollbar-thumb {
+    background: #F7C620; /* Color del "palo" de la barra de desplazamiento */
+    border-radius: 10px; /* Bordes redondeados */
 }
